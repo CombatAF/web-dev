@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position property in CSS</title>
+    <style>
+        .cool{
+            border: 4px solid red;
+            height: 4000px;
+        }
+      /* Css positions: Static(default),relative,absolute,fixed,sticky */
+      .box {
+        border: 2px solid blue;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+        display: inline-block;
+      }
+      #box3 {
+        /* Relative: relative to its normal position and will leave a gap from its normal position */
+        /* absolute: relative to position from its 1st parent and leaves the gap from it.Here the parent is class: cool */
+        /* Fixed:The following box will be fix while scrolling. ie: Positions yhe element with relative to its browsing window */
+        /* Sticky:Sticks the element from its relative position while scrooling */
+        position: sticky;
+        top: 12px;
+        left: 12px;
+        
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cool">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">Chat with us</div>
+      <div class="box" id="box4">4</div>
+    </div>
+  </body>
+</html>

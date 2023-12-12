@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Events</title>
+  </head>
+  <style>
+    #btn {
+      background-color: red;
+      padding: 12px 14px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>This is Heading</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id culpa, atque
+        ad laudantium rerum qui explicabo. Reprehenderit repellendus facere id,
+        saepe deleniti ut! Possimus eius perferendis modi ratione, laborum iste
+        fuga! Placeat, labore Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Dolorum facilis rem, nam a pariatur dolore rerum iusto in,
+        mollitia eum esse distinctio maiores tenetur enim consequatur id ut
+        magni dicta aliquam consequuntur excepturi hic harum libero ad.
+        Voluptate quia eveniet eaque incidunt illo commodi perspiciatis fugiat
+        quis ipsam esse voluptates impedit adipisci autem cumque sunt, excepturi
+        nisi saepe asperiores nemo ullam ab dignissimos sapiente cupiditate
+        laudantium? Sed nam dolore odio sapiente blanditiis nulla eius deleniti
+        animi porro in sint doloremque ratione, voluptas, unde dignissimos
+        eaque. Animi aspernatur magni aliquid minus laudantium, nisi voluptate,
+        ducimus facere nulla, ratione eos at expedita!
+      </p>
+    </div>
+    <button id="btn" onclick="hide()">Show/Hide</button>
+  </body>
+  <script>
+      let para = document.getElementById("para");
+      para.addEventListener('mouseover', function run(){
+        alert('mouse inside')
+      });
+      para.addEventListener('mouseout', function run(){
+        alert('mouse outside')
+      });
+    function hide() {
+      let btn = document.getElementById("btn");
+      let para = document.getElementById("para");
+      if (para.style.display != "none") {
+        para.style.display = "none";
+      } else {
+        para.style.display = "block";
+      }
+    }
+  </script>
+</html>

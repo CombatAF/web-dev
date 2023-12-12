@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS varaibles and custom properties</title>
+    <style>
+        :root{
+            --primary-colour:violet;
+            --danger-colour:lime;
+            --maxw:333px;
+        }
+        .box{
+            --box-colour: violet;
+            height: 200px;
+            width: 200px;
+            background-color: var(--primary-colour);
+            margin: 2px 9px;
+            border: 2px solid red;
+            box-shadow: 2px 4px var(--primary-colour);
+        }
+        .container{
+            background-color: var(--danger-colour);
+            margin: auto;
+            width: var(--maxw);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+    
+</body>
+</html>

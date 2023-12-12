@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math object</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Math object</h1>
+    </div>
+    
+</body>
+<script>
+    let m = Math;
+    console.log(Math)
+    // Printing constants from math Object
+    console.log("The value of math.pi is", Math.PI);
+    // Printing functions from math Object
+    let a = 44.68;
+    let b = 69.69;
+    console.log("The rounded value is", Math.round(a) , Math.round(b));
+    // power function
+    console.log("3 raise to 2 is" , Math.pow(3,2));
+    // square root 
+    console.log("The square root of 16 is" , Math.sqrt(16));
+    // Rounded value 
+    console.log("8.4 rounded down to nearest value is" , Math.floor(8.4));
+    console.log("8.4 rounded up to nearest value is" , Math.ceil(8.4));
+    // Absolute value 
+    console.log("Absolute value of -5.88 is" , Math.abs(-5.88));
+    // Trigo function 
+    console.log("The value of sin(pi) is ", Math.sin(Math.PI/2));
+    // Minimum and maximum value 
+    console.log("The minimum value of 2,3,8 is" , Math.min(2,3,8));
+    console.log("The Maximum value of 2,3,8 is" , Math.max(2,3,8));
+    // Generating random number 
+    let a1 = 1;
+    let b1 = 100;
+    let r1_100 = a1 + (b1-a1)*Math.random();
+    console.log("The random number is" , r1_100);
+
+</script>
+</html>

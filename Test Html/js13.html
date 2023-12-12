@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Js date and time</title>
+</head>
+<body>
+    <div class="container">
+        
+        current Time is <span id="time"></span>
+    </div>
+    <script>
+        let now = new Date();
+        console.log(now);
+        let dt = new Date(1000);
+        console.log(dt);
+
+        // let newdate = new Date(years , month , date , hours , seconds, milliseconds);
+        // let newdate = new Date("2030-10-11");
+        // console.log(newdate);
+        let newdate = new Date(2025,10,11);
+        console.log(newdate);
+
+        let yr  = newdate.getFullYear();
+        console.log(" This is the year" , yr);
+        let month  = newdate.getMonth();
+        console.log(" This is the month" , month);
+
+        newdate.setDate(12);
+        console.log(newdate);
+
+        setInterval(updateTime, 1000);
+
+        function updateTime(){
+            time.innerHTML = new Date();
+        }
+
+    </script>
+    
+</body>
+</html>

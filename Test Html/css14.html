@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+             display: flex; /*initialize container as flexbox */
+            /* flex-direction: row;It is default value of flex direction: */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+             /* flex-wrap: wrap;For wrapping elements */
+            /* flex-flow: row-reverse wrap; uses flex direction and flex wrap properties at same time */
+            /* justify-content: center;/* takes your content in center */
+             /* justify-content: space-between; space between two elemnts */ 
+             /* justify-content: space-evenly;makes space between elemnts even */
+             /* justify-content: space-around; space between left and right will be equal */
+             /* align-items: center; */
+             /* align-items: flex-end; */
+             /* align-items: flex-start; */
+             /* align-items: stretch; */
+             
+        }
+.item{
+    background-color: tomato;
+    border: 2px solid green;
+    margin: 10px;
+    padding: 3px;
+    width: 200px;
+    height: 200px;
+
+}
+#item1{
+    /* higher the order,later it shows in container */
+    /* order: 4; */
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
+}
+#item2{
+    /* flex-shrink: 3; */
+    /* when flex direction is set to row flex basis will control width: ; */
+    /* when flex direction is set to column flex basis will control height: ; */
+    flex-basis: 200px;
+}
+#item3{
+    /* shortcut for flex grow, flex shrink, flex basis  */
+    flex: 2 2 230px;
+    /* align-self: flex-end; */
+    /* align-self: flex-start; */
+    /* align-self: center; */
+}
+    </style>
+</head>
+<body>
+    <h1>This is flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <!-- <div class="item" id="item4">Fourth box</div> -->
+        <!-- <div class="item" id="item5">Fifth box</div> -->
+        <!-- <div class="item" id="item6">Sixth box</div> -->
+    </div>
+    
+</body>
+</html>

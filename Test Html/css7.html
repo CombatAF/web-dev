@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        /* use *{} as universal selector */
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color:#75bcd2;
+        }
+.container{
+    background-color: rgb(143, 143, 191);;
+    border: 2px solid  rgb(96, 22, 96); 
+    /* We can give padding top,bottom,left,right, Smae goes for margin */
+    /* padding-bottom: 22px;  
+   padding-left: 44px; */
+   /* padding: 23px 56px 6px 78px; for setting padding top right bottom left */
+    margin: 12px  19px;
+    /* padding: y(top/bottom) x(left/right);for setting padding for top bottom,left right */
+    padding: 32px 19px;
+border-radius: 12px;
+width: 400px
+;
+box-sizing: border-box;/*so that if we change the padding and margin,the width and height would not get affected*/
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="firstpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum praesentium, ea voluptatem atque libero magnam. Animi id assumenda fugiat. Incidunt ab laborum voluptatem tenetur quae consequatur velit soluta voluptate?</p>
+
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="secondpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum praesentium, ea voluptatem atque libero magnam. Animi id assumenda fugiat. Incidunt ab laborum voluptatem tenetur quae consequatur velit soluta voluptate?</p>
+
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="thirdpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum praesentium, ea voluptatem atque libero magnam. Animi id assumenda fugiat. Incidunt ab laborum voluptatem tenetur quae consequatur velit soluta voluptate?</p>
+
+    </div>
+    
+</body>
+</html>

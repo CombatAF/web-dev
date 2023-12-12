@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            border: 2px solid red;
+            margin: 23px 12px;
+            /* box shadow offset x and offset y */
+            /* use the third value for blur radius */
+            /* use fourth value as spread radius */
+            /* box-shadow: 12px 12px 10px 22px green;  */
+            /* use box shadow values in negative to achieve shadow above the box */
+            /* box-shadow: -12px -12px blue; */
+            background-color: salmon;
+            /* to give shadow inside the box */
+            /* box-shadow: inset 22px 12px greenyellow; */
+            /* give multiple box shadow */
+            box-shadow: 4px 3px greenyellow, 2px 4px red;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque blanditiis provident veniam dolorem alias, officiis error, dolore nulla culpa porro atque! Nesciunt eveniet qui fugiat reiciendis eum, eaque tenetur nisi neque libero. Quisquam.</p>
+            
+
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque blanditiis provident veniam dolorem alias, officiis error, dolore nulla culpa porro atque! Nesciunt eveniet qui fugiat reiciendis eum, eaque tenetur nisi neque libero. Quisquam.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque blanditiis provident veniam dolorem alias, officiis error, dolore nulla culpa porro atque! Nesciunt eveniet qui fugiat reiciendis eum, eaque tenetur nisi neque libero. Quisquam.</p>
+        </div>
+        
+    </div>
+</body>
+</html>

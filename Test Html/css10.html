@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: rgb(18, 1, 1);
+            border-radius: 17px 17px;
+           
+        }
+
+        .navbar ul{
+            /* The background colur which disappeared due to float can be bought back using overflow  */
+            overflow: auto;
+
+        }
+
+
+        .navbar li{
+            float: left;
+            /* list style is used here to remove bullets */
+            list-style: none;
+            margin: 13px 20px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            color: white;
+            text-decoration: none;
+           
+
+        }
+        .search{
+            color: white;
+            float:  right;
+            padding: 14px 18px;
+        }
+      .navbar input{
+        border: 2px solid black;
+        border-radius: 11px;
+        padding: 3px 17px;
+        margin: 0px 45px;
+        width: 129px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact us</a></li>
+          <div class="search">
+            <input type="text" name="search" id="search" placeholder="Search this website">
+          </div>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

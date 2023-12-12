@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string functions</title>
+</head>
+<body>
+    <script>
+        var string = "This is a string" ;
+        console.log(string);
+        // first occurence of a substring
+        var position = string.indexOf('is');
+        console.log(position);
+        // Last occurence of string
+         position = string.lastIndexOf('is');
+        console.log(position);
+// substring from string
+// var substring = string.slice(1,6);
+// console.log(substring);
+var substring1 = string.substr(1,8);
+console.log(substring1);
+// To repace a word of string
+// var replace = string.replace('string', 'Game');
+// console.log(string);
+// console.log(replace);
+// To print in capital letters
+console.log(string.toUpperCase());
+// To print in small letters
+console.log(string.toLowerCase());
+// var newstring = string.concat('New string');
+// console.log(newstring);
+// var strwithwhitespaces = "   this contains     white spaces     " ;
+// console.log(strwithwhitespaces);
+// console.log(strwithwhitespaces.trim());  
+// To extract the character at particular Number
+// var char5 = string.charAt(5);
+var char5 = string.charCodeAt(5);// to get character code of element at specific number/
+console.log(char5);
+
+
+</script>
+    
+</body>
+
+</html>

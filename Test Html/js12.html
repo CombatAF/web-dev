@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set timeout and set interval</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        // set time out: Allows the finction to run once after interval of time
+        // cleatTimeout: Allows the function to run repeteadly after interval of time
+        function greet(name , bytext){
+            console.log("Good Morning" + name + bytext);
+        }
+    //    timeout =  setTimeout( greet, 5000 , " Rohit ", "Take care");
+    //    console.log(timeout);
+    //    clearTimeout(timeout);
+
+            // IntervalID = setInterval(greet, 1000 , " ROHIT ", " Lets Go ");
+            // clearInterval(IntervalID);
+            function displaytime(){
+                time = new Date();
+                console.log(time);
+                document.getElementById('time').innerHTML = time;
+            }
+            setInterval(displaytime, 1000);
+
+    </script>
+</body>
+</html>

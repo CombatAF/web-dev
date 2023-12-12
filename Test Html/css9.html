@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: chartreuse;
+            padding: 44px;
+            margin: 34px auto;
+            width: 666px;
+
+        }
+        a{
+            /* To remove underline from read more */
+            text-decoration: none;
+            color: rgb(0, 0, 1);
+            background-color: rgb(126, 23, 23);
+        }
+        /* for the buttons visited */
+        a:visited{  
+            background-color:rgb(81, 0, 255) ;
+
+
+        }
+        /* When we take arrow towards buttons then colour changes */
+        a:hover{
+            color: rgb(1, 3, 0);
+            background-color: rgb(219, 208, 230);
+        }
+        /* When we click a button then it becomes active hence a:active css is used */
+        a:active{
+            background-color:yellow;
+        }
+.btn{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: crimson;
+    padding: 6px;
+    border: none;
+    /* it is to bring cursor when we place mouse there */
+    cursor: pointer;
+    font-size: 11px;
+    border-radius: 4px;
+
+}
+.btn:hover{
+    background-color: pink;
+    border: 2px solid black;
+}
+.btn:active{
+    background-color: cadetblue;
+}
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is heading</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod reiciendis unde ducimus laborum quaerat soluta, blanditiis, animi nisi veniam, iusto in commodi necessitatibus asperiores eius libero quos obcaecati laudantium magni! Saepe, distinctio doloribus!
+        </p>
+        <a href="https://www.google.com/" class="ttt">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+    
+</body>
+</html>
