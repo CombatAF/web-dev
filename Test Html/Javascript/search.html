@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <p class="para">Like this thing</p>
+    <p class="para">Hate this thing</p>
+    <p>Forget this thing</p>
+    <h1 id="heading">Change  the content of h1</h1>
+
+    <form action="">
+        <label for="">male</label>
+        <input type="radio" name="gender" id="">
+        <label for="">Female</label>
+        <input type="radio" name="gender" id="">
+        <label for="malefemale"></label>
+        <input type="radio" name="gender" id="">
+    </form>
+    <br>
+
+    <!-- This will change the h1 on clicking the button  -->
+
+    <button onclick="changeContent()">Click here</button>
+    <script>
+        const changeContent = () =>{
+            document.getElementById('heading').innerHTML = "This is changed content"
+        
+        // Another way 
+        // const headingchange = document.getElementById('heading');
+        // headingchange.innerHTML = 'This is changed content'
+        // }
+        // change color of class para 
+        // const changecolor = document.querySelector(".para")
+        // changecolor.style.color = "red";
+        const changecolor = document.getElementsByClassName("para");
+// To change color of all elements of class para 
+// Loop through the collection of elements and set the color for each one
+for (let i = 0; i < changecolor.length; i++) {
+    changecolor[i].style.color = "red";
+}
+
+        console.log(document.getElementsByName('gender'));
+        }
+            </script>
+    
+</body>
+</html>
