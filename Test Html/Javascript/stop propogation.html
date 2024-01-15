@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #parentId {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid darkblue;
+        }
+
+        #childId {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            border: 2px solid darkred;
+        }
+    </style>
+    <title>Centered Boxes</title>
+</head>
+<body>
+    <div class="parentDiv" id="parentId">
+        <div class="childDiv" id="childId"></div>
+    </div>
+    <script>
+        const parentId = document.getElementById('parentId');
+        const childId = document.getElementById('childId');
+
+        const parentCall = () =>{
+            alert('parent div call');
+            console.log('parent div call');
+            // stopPropagation() is used to stop back to back alert calls in the following case
+            // event.stopPropagation();
+
+        }
+            const childCall = () =>{
+                alert ('Child div call');
+                console.log('Child div call');
+                // event.stopPropagation();
+
+            }
+// by adding true in eventListner will call the alert in capture phase ie top to bottom which means first parent will be called and then child.Bubbling is just the opposite and it is by default or we can do this by writing false 
+parentId.addEventListener('click' , parentCall,true);
+childId.addEventListener('click' , childCall,true)
+    </script>
+</body>
+</html>
