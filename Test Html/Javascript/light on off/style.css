@@ -1,0 +1,35 @@
+/* External CSS file (style.css) */
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-heading {
+    text-align: center;
+}
+
+h1 {
+    color: #333; /* Change the color to your preference */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Change the color to your preference */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#myimg {
+    width: 150px; /* Set the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px;
+}
