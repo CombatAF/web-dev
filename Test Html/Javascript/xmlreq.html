@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To call api</title>
+</head>
+<body>
+    <!-- We dont have api currently -->
+    <div id="container"></div>
+    <script>
+        document.querySelector('#container');
+
+        const req = new XMLHttpRequest();
+        request.open('GET', "The link of api");
+        request.send();
+
+        // to get response 
+        request.addEventListner('Load' , function(){
+            const [data] = JSON.parse(this.responseText);
+            // 13:42
+        })
+    </script>
+</body>
+</html>
